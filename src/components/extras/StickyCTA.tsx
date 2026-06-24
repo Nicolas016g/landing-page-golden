@@ -19,10 +19,10 @@ export function StickyCTA() {
     <div className="fixed bottom-0 left-0 right-0 z-40 border-t border-primary/10 bg-white/95 p-3 shadow-lg backdrop-blur-md md:p-4">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4">
         <p className="hidden text-sm font-bold text-primary-dark sm:block">
-          Últimas unidades no Parque Vista Bárbara — fale com um corretor
+          Últimas unidades no Parque Vista Bárbara 
         </p>
         <a href="#contato" className="btn-primary flex-1 text-sm sm:flex-none">
-          Falar com Corretor
+          Fale com um corretor
           <ArrowRight className="h-4 w-4" />
         </a>
         <button

@@ -10,7 +10,7 @@ const pillars = [
   },
   {
     icon: Ruler,
-    title: "Terreno 154 m²",
+    title: "Terrenos a partir de 154 m²",
     text: "Quintal privativo para lazer, churrasco e mais conforto no dia a dia.",
   },
   {
@@ -33,7 +33,7 @@ export function AboutSection() {
           <SectionHeader
             eyebrow="Sobre o empreendimento"
             title="Infraestrutura completa no Parque Vista Bárbara"
-            subtitle="O bairro foi planejado para você viver bem, com segurança e praticidade — perto de tudo que você precisa."
+            subtitle="O bairro foi planejado para você viver bem, com segurança e praticidade."
             align="center"
           />
         </ScrollReveal>
@@ -54,7 +54,7 @@ export function AboutSection() {
 
         <ScrollReveal delay={0.2} className="mt-12">
           <div className="highlight-box rounded-2xl text-center">
-            <p className="text-lg font-bold text-primary-dark">Status da obra: Pronto para morar — 100%</p>
+            <p className="text-lg font-bold text-primary-dark">Status da obra: 100% Concluído Pronto para morar.</p>
             <p className="mt-2 text-sm text-text-muted">
               Excelente oportunidade com entrada facilitada, parcelamento direto e financiamento habitacional.
             </p>

@@ -79,7 +79,7 @@ export function Header() {
               scrolled ? "btn-primary !py-2.5" : "bg-white text-primary hover:bg-white/90"
             }`}
           >
-            Falar com Corretor
+            Fale com um corretor
           </a>
         </div>
 
@@ -105,7 +105,7 @@ export function Header() {
             </a>
           ))}
           <a href="#contato" className="btn-primary mt-3 w-full text-center" onClick={() => setOpen(false)}>
-            Falar com Corretor
+            Fale com um corretor
           </a>
         </div>
       )}

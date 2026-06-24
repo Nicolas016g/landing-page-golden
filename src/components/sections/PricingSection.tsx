@@ -5,17 +5,17 @@ import { SectionHeader } from "../ui/SectionHeader";
 const units = [
   {
     name: "Casa Tipo A",
-    area: "50 m²",
-    terrain: "154 m²",
+    area: "77 m²",
+    terrain: "Apartir de 154 m²",
     highlight: false,
-    features: ["2 dormitórios", "Sala e cozinha", "Quintal privativo", "1 vaga de garagem"],
+    features: ["2 dormitórios", "Sala, cozinha e banheiro", "Quintal privativo", "1 vaga de garagem"],
   },
   {
     name: "Casa Tipo B",
-    area: "53 m²",
-    terrain: "154 m²",
+    area: "77 m²",
+    terrain: "Apartir de 154 m²",
     highlight: true,
-    features: ["2 dormitórios", "Cozinha americana", "Área de serviço", "1 vaga de garagem"],
+    features: ["2 dormitórios", "Sala, cozinha e banheiro", "Quintal privativo", "1 vaga de garagem"],
   },
 ];
 
@@ -27,7 +27,7 @@ export function PricingSection() {
           <SectionHeader
             eyebrow="Plantas e tipologias"
             title="Casas prontas para morar"
-            subtitle="Terrenos a partir de 154 m² com quintal privativo e acabamento para você realizar o sonho da casa própria."
+            subtitle="A casa própria que você sempre sonhou já está para receber a sua família."
             align="center"
           />
         </ScrollReveal>

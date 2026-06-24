@@ -8,6 +8,7 @@ interface LeadFormProps {
   title?: string;
   subtitle?: string;
   compact?: boolean;
+  className?: string;
 }
 
 export function LeadForm({
@@ -15,6 +16,7 @@ export function LeadForm({
   title = "Entre em Contato",
   subtitle = "Preencha o formulário e compre direto com a incorporadora.",
   compact = false,
+  className = "",
 }: LeadFormProps) {
   const [loading, setLoading] = useState(false);
   const [sent, setSent] = useState(false);
@@ -30,7 +32,7 @@ export function LeadForm({
 
   if (sent) {
     return (
-      <div className="card-premium p-8 text-center" id={id}>
+      <div className={`card-premium p-8 text-center ${className}`} id={id}>
         <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary text-2xl text-white">
           ✓
         </div>
@@ -41,7 +43,7 @@ export function LeadForm({
   }
 
   return (
-    <div className="card-premium relative overflow-hidden" id={id}>
+    <div className={`card-premium relative flex h-full flex-col overflow-hidden ${className}`} id={id}>
       <div className="absolute left-0 right-0 top-0 h-1 bg-gradient-to-r from-primary via-primary-light to-accent" />
       <div className="border-b border-border/60 bg-gradient-to-r from-primary/5 to-accent/5 px-6 py-5">
         <div className="flex items-center gap-3">
@@ -55,7 +57,7 @@ export function LeadForm({
         </div>
       </div>
 
-      <form onSubmit={handleSubmit} className="space-y-4 p-6">
+      <form onSubmit={handleSubmit} className="flex flex-1 flex-col space-y-4 p-6">
         {!compact && (
           <div>
             <label className="mb-1.5 block text-sm font-semibold text-primary-dark">Nome completo *</label>
@@ -74,8 +76,8 @@ export function LeadForm({
           <label className="mb-1.5 block text-sm font-semibold text-primary-dark">Interesse *</label>
           <select required className="input-field" defaultValue="">
             <option value="" disabled>Selecione</option>
-            <option value="casa-50">Casa 50 m² — 2 dormitórios</option>
-            <option value="casa-53">Casa 53 m² — 2 dormitórios</option>
+            <option value="casa-50">Casa 77 m² — 2 dormitórios</option>
+            <option value="casa-53">Casa 77 m² — 2 dormitórios</option>
             <option value="financiamento">Simular financiamento</option>
             <option value="visita">Agendar visita</option>
           </select>
@@ -88,7 +90,7 @@ export function LeadForm({
         )}
         <button type="submit" disabled={loading} className="btn-primary w-full disabled:opacity-70">
           {loading ? <Loader2 className="h-5 w-5 animate-spin" /> : <Send className="h-5 w-5" />}
-          Enviar contato
+          Solicitar orçamento
         </button>
         <p className="flex items-center justify-center gap-1.5 text-center text-[11px] text-text-muted">
           <Lock className="h-3 w-3" />

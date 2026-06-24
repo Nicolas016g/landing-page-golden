@@ -17,7 +17,7 @@ export function CTABanner() {
         </ScrollReveal>
         <ScrollReveal delay={0.1} className="mt-8 flex flex-wrap justify-center gap-4">
           <a href="#contato" className="btn-accent !px-10">
-            Falar com Corretor
+            Fale com um corretor
             <ArrowRight className="h-5 w-5" />
           </a>
           <a

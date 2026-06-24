@@ -27,26 +27,26 @@ export function MarketSection() {
           <SectionHeader
             eyebrow="Localização"
             title="Região de fácil acesso"
-            subtitle="Zona Norte de Sorocaba — próximo a comércio, serviços e principais vias da cidade."
+            subtitle="Zona Norte de Sorocaba. Viva perto de tudo que você precisa."
             align="center"
           />
         </ScrollReveal>
 
-        <div className="mt-14 grid gap-10 lg:grid-cols-2">
-          <ScrollReveal delay={0.1}>
-            <div className="card card-hover overflow-hidden">
+        <div className="mt-14 grid gap-10 lg:grid-cols-2 lg:items-center">
+          <ScrollReveal delay={0.1} className="flex items-center justify-center">
+            <div className="card card-hover w-full overflow-hidden">
               <div className="flex h-56 items-center justify-center bg-gradient-to-br from-primary via-primary-light to-[#1a5a9e]">
                 <div className="text-center text-white">
                   <MapPin className="mx-auto h-12 w-12 text-accent" />
                   <p className="mt-4 text-xl font-bold">Plantão de Vendas</p>
                   <p className="mt-2 text-sm text-white/85">Av. Sandro Antônio Mendes, 1.250</p>
-                  <p className="text-sm text-white/85">Sorocaba — SP</p>
+                  <p className="text-sm text-white/85">Sorocaba/SP</p>
                 </div>
               </div>
             </div>
           </ScrollReveal>
 
-          <ScrollReveal delay={0.15}>
+          <ScrollReveal delay={0.15} className="flex flex-col justify-center">
             <h3 className="text-xl font-extrabold text-primary-dark">Próximo a você</h3>
             <p className="mt-2 text-sm text-text-muted">Tempos de acesso aproximados do empreendimento</p>
             <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3">

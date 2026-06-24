@@ -26,7 +26,7 @@ export function BenefitsSection() {
           <SectionHeader
             eyebrow="Infraestrutura"
             title="Lazer e comodidades do bairro"
-            subtitle="Mais do que uma casa — um estilo de vida completo, com todo o conforto que você merece."
+            subtitle="Um estilo de vida completo com todo o conforto que você merece."
             align="center"
           />
         </ScrollReveal>

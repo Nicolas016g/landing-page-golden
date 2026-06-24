@@ -1,19 +1,19 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { MapPin } from "lucide-react";
 import { GoldenCityLogo } from "../ui/GoldenCityLogo";
 import { LeadForm } from "../ui/LeadForm";
-import { ProjectLogo } from "../ui/ProjectLogo";
 
 export function HeroSection() {
   return (
     <section id="home" className="relative min-h-[100svh] overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/hero-bg.webp')" }}
+        style={{ backgroundImage: "url('/images/hero-parque-vista-barbara.webp')" }}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-primary-dark/85 via-primary/75 to-primary-dark/90" />
+      <div className="absolute inset-0 bg-gradient-to-b from-primary-dark/88 via-primary/78 to-primary-dark/92" />
 
       <div className="relative mx-auto flex min-h-[100svh] max-w-7xl flex-col px-4 pb-16 pt-24 md:px-6 md:pb-20 md:pt-28">
         <motion.div
@@ -36,8 +36,19 @@ export function HeroSection() {
               Pronto para morar
             </span>
 
-            <div className="mt-6">
-              <ProjectLogo variant="hero" />
+            <h1 className="mt-5 text-3xl font-extrabold leading-tight tracking-tight md:text-4xl lg:text-[2.6rem]">
+              Residencial Parque Vista Bárbara
+            </h1>
+
+            <div className="mt-6 overflow-hidden rounded-2xl border border-white/20 shadow-[0_16px_48px_rgba(0,0,0,0.35)]">
+              <Image
+                src="/images/empreendimento-fachada.png"
+                alt="Fachada do Residencial Parque Vista Bárbara"
+                width={768}
+                height={1277}
+                className="h-auto w-full max-h-[420px] object-cover object-center"
+                priority
+              />
             </div>
 
             <p className="mt-5 max-w-xl text-lg font-medium leading-relaxed text-white/90 md:text-xl">
